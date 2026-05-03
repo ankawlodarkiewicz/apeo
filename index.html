@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NESTFOAM - Generator stopki e-mail</title>
+  <title>APEO - Generator stopki e-mail</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -290,7 +290,7 @@
     <input id="phone" placeholder="+48 123 456 789" type="text"/>
 
     <label for="email">Email</label>
-    <input id="email" placeholder="jan.kowalski@nestfoam.pl" type="email"/>
+    <input id="email" placeholder="jan.kowalski@apeo.com.pl" type="email"/>
 
     <label for="photo">Zdjęcie (jpg/png)</label>
     <input type="file" id="photo" accept="image/*" />
@@ -635,7 +635,7 @@ document.getElementById("downloadHtml").addEventListener("click", function(){
   const blob = new Blob([content], {type: "text/html;charset=utf-8"});
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
-  a.href = url; a.download = "nestfoam-signature.html"; document.body.appendChild(a); a.click(); a.remove();
+  a.href = url; a.download = "apeo-signature.html"; document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
 });
 
@@ -644,7 +644,7 @@ document.getElementById("downloadTxt").addEventListener("click", function(){
   const blob = new Blob([content], {type: "text/plain;charset=utf-8"});
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
-  a.href = url; a.download = "nestfoam-signature.txt"; document.body.appendChild(a); a.click(); a.remove();
+  a.href = url; a.download = "apeo-signature.txt"; document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
 });
 
